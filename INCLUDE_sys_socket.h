@@ -50,7 +50,7 @@ int send            _P_((int, const void *, int, unsigned int) );
 int recv            _P_((int, const void *, int, unsigned int) );
 int sendto          _P_((int, const void *, int, unsigned int, const struct sockaddr *, int) );
 int recvfrom        _P_((int, const void *, int, unsigned int, const struct sockaddr *, int *) );
-
+struct hostent *gethostbyname _P_((const char *name) );
 #undef _P_
 
 #endif /* _SYS_SOCKET_H */
