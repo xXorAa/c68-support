@@ -7,14 +7,8 @@ u_short th_sport;
 u_short th_dport;
 tcp_seq th_seq;
 tcp_seq th_ack;
-#if BYTE_ORDER == LITTLE_ENDIAN
-u_char th_x2:4;
-u_char th_off:4;
-#endif
-#if BYTE_ORDER == BIG_ENDIAN
-u_char th_off:4;
-u_char th_x2:4;
-#endif
+int th_off:4;
+int th_x2:4;
 u_char th_flags;
 #define TH_FIN 0x01
 #define TH_SYN 0x02
