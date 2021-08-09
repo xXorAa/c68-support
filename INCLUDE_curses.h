@@ -80,12 +80,12 @@ typedef unsigned long chtype;
 #define ACS_BLOCK (_acs_ch['0'])
 #endif
 #define KEY_BREAK 0401
-#define KEY_DOWN 0402
-#define KEY_UP 0403
-#define KEY_LEFT 0404
-#define KEY_RIGHT 0405
+#define KEY_DOWN 0330
+#define KEY_UP 0320
+#define KEY_LEFT 0300
+#define KEY_RIGHT 0310
 #define KEY_HOME 0406
-#define KEY_BACKSPACE 0407
+#define KEY_BACKSPACE 0302
 #define KEY_F0 0410
 #define KEY_F(n) (KEY_F0+(n))
 #define KEY_DL 0510
