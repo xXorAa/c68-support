@@ -1,7 +1,7 @@
 #ifndef _STDDEF_H
 #define _STDDEF_H
 #ifndef _SYS_TYPES_H
-#include <SYS/types.h>
+#include <sys/types.h>
 #endif
 #ifndef NULL
 #define NULL ((void *)0)
