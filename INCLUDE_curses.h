@@ -79,15 +79,21 @@ typedef unsigned long chtype;
 #define ACS_LANTERN (_acs_ch['l'])
 #define ACS_BLOCK (_acs_ch['0'])
 #endif
-#define KEY_BREAK 0401
 #define KEY_DOWN 0330
 #define KEY_UP 0320
 #define KEY_LEFT 0300
 #define KEY_RIGHT 0310
-#define KEY_HOME 0406
 #define KEY_BACKSPACE 0302
-#define KEY_F0 0410
-#define KEY_F(n) (KEY_F0+(n))
+
+/* QL keyboard does not have an F0 key */
+/*#define KEY_F0 0410
+#define KEY_F(n) (KEY_F0+(n))*/
+/* F keys inscrease by 4 on QDOS */
+#define KEY_F(n) (0350 + ((n - 1) * 4)
+
+/* Keys below this QL does not have */
+#define KEY_BREAK 0401
+#define KEY_HOME 0406
 #define KEY_DL 0510
 #define KEY_IL 0511
 #define KEY_DC 0512
