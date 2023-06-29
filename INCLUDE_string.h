@@ -101,7 +101,7 @@ int stscmp _P_((char *,char *));
 int stspfp _P_((char *,int *));
 char * strrpbrk _P_((const char *,const char *));
 int strfnd _P_((const char *,const char *));
-void strins _P_((char *,char *));
+void strins_qdos _P_((char *,char *));
 char * strrstrip _P_((char *,int));
 char * strstrip _P_((char *,int));
 #undef _P_
